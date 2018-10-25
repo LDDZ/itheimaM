@@ -8,6 +8,8 @@ ul,ol{
 a{
     text-decoration: none;
 }
+
+/* 搜索头部 */
 header{
     height: 40px;
     width: 100%;
@@ -45,4 +47,23 @@ header div .login{
     line-height: 40px;
     text-align: center;
     color: #fff;
+}
+
+/* 导航栏 */
+nav{
+    width: 100%;
+}
+nav ul{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    width: 25%;
+    /* border: 1px solid #dd4b26; */
+    background: #000;
+}
+nav ul li a img{
+    margin: 0 auto;
 }
