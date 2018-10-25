@@ -9,9 +9,6 @@ a{
     text-decoration: none;
 }
 header{
-    /* position: fixed;
-    left: 0;
-    top: 0; */
     height: 40px;
     width: 100%;
 }
@@ -21,11 +18,9 @@ header div{
     height: 40px;
     background: #dd4b26;
     display: flex;
-    justify-content:space-between; 
-    /* position: relative;
-    float: left; */
+    justify-content:space-between;
 }
-header div img{
+header div .logo{
     width: 40px;
     height: 40px;
 }
@@ -33,11 +28,21 @@ header div form{
     width: 80%;
 }
 header div input{
-    width: 100%;
+    width: 98%;
     height: 30px;
+    border:1px solid red;
     border-radius: 15px;
     margin: 5px;
+    padding-left: 30px;
 }
-header div .search_icon{
-    background-image: url(images/search_icon.png) no-repeat center;
+header div form .search_icon{
+    background: url(../images/search_icon.png) no-repeat 5px #fff;
+    background-size: 20px 20px;
+}
+header div .login{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
 }
