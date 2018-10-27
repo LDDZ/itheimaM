@@ -52,6 +52,7 @@ header div .login{
 /* 导航栏 */
 nav{
     width: 100%;
+    border-bottom: 1px solid #C0C0C0;
 }
 nav ul{
     width: 100%;
@@ -61,9 +62,19 @@ nav ul{
 }
 nav ul li{
     width: 25%;
-    /* border: 1px solid #dd4b26; */
-    background: #000;
+}
+nav ul li a{
+    display: block;
 }
 nav ul li a img{
+    width: 40px;
+    height: 40px;
+    display: block;
     margin: 0 auto;
+}
+nav ul li a p{
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 6px 0;
 }
