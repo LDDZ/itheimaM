@@ -137,6 +137,8 @@ nav ul li a p{
     display: flex;
     flex-wrap:wrap;
     flex: 1;
+    margin: 0;
+    padding: 0;
 }
 .product .product_box_content ul li {
     width: 33.333%;
