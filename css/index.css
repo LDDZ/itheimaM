@@ -163,13 +163,12 @@ nav ul li a p{
     padding-left: 10px;
     line-height: 20px;
 }
-.vip_content{
-    /* display: flex; */
-    /* align-items:stretch; */
-    /* flex-wrap:wrap; */
-    /* float: left; */
-}
-.vip_content img:first-of-type{
+.product .vip_content a img{
+    display: block;
     float: left;
     width: 50%;
+    height: 130px;
+}
+.vip_content a:first-of-type img{
+    height: 260px;
 }
