@@ -1,0 +1,63 @@
+/* 定义商品分类页顶部通栏 */
+.topBar{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+    justify-content:space-between; 
+    align-items:center; 
+    background-image: url(../images/topBarBGImg.PNG);
+}
+.topBar .back{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.topBar .menu{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/menu.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.topBar form{
+    width: 100%;
+    height: 44px;
+    padding: 0 20px;
+}
+.topBar form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+.category_left{
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+.category_left ul li{
+    width: 89px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+}
+.category_left ul li a{
+    display: block;
+}
+.category_left ul li:hover{
+    border-right: none;
+}
+.category_left ul li a:hover{
+    color: #dd4b26;
+}
