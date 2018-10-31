@@ -1,4 +1,5 @@
 /* 定义商品分类页顶部通栏 */
+/* 一级分类 */
 .topBar{
     width: 100%;
     height: 45px;
@@ -55,9 +56,42 @@
 .category_left ul li a{
     display: block;
 }
-.category_left ul li:hover{
+.category_left ul li:hover,.category_left ul .now{
     border-right: none;
 }
-.category_left ul li a:hover{
+.category_left ul li a:hover,.category_left ul .now a{
     color: #dd4b26;
+}
+/* 二级分类 */
+.category_right{
+    overflow: hidden;
+    height: 100%;
+    padding: 0 10px;
+}
+.category_right .banner{
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+}
+.category_right .banner>img{
+    width: 100%;
+}
+.category_right h3{
+    font-size: 14px;
+}
+.category_right ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.category_right ul li{
+    width: 33.333%;
+    max-width: 230px;
+}
+.category_right ul li a{
+    display: block;
+}
+.category_right ul li > a >img{
+    display: block;
+    width: 100%;
 }
