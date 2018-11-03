@@ -53,7 +53,6 @@
 }
 /* 店铺 */
 .shop{
-    border-bottom: 1px  dashed #ccc;
     border-top: 1px  dashed #ccc;
     margin-top: 10px;
 }
@@ -62,23 +61,36 @@
     line-height: 34px;
     display: flex;
     align-items:center;
+    justify-content:space-between;
+    border-bottom: 1px  dashed #ccc;
 }
-.shop .shop_tit .tick{
+.shop .shop_tit .shop_tip_left{
+    display: flex;
+    align-items:center;
+}
+.shop .shop_tit .shop_tip_left .tick{
     width:34px;
     height: 34px;
     background: url(../images/circular.png) no-repeat;
     background-size: 20px 20px;
     background-position: center center;
 }
-.shop .shop_tit .shopIcon{
+.shop .shop_tit .shop_tip_left .shopIcon{
     widows: 20px;
     height: 20px;
 }
-.shop .shop_tit .shopName{
+.shop .shop_tit .shop_tip_left .shopName{
     margin-left: 10px;
 
 }
-.shop .shop_tit .shopTip{
+.shop .shop_tit .shop_tip_right{
+    display: flex;
+    align-items:center;
+    margin-right: 10px;
+}
+.shop .shop_tit .shop_tip_right .shopTip{
+    position: relative;
+    float: right;
     color: #d8505c;
     font-size: 12px;
 }
@@ -88,12 +100,14 @@
     height: 100px;
     padding: 10px 0;
     display: flex;
-    
+    align-items:center;
 }
 .product .tick{
-    width:34px;
+    display: inline-block;
+    width: 34px;
     height: 34px;
-    background: url(../images/circular.png) no-repeat;
+    /* background: #000; */
+    background: url(../images/tick.png) no-repeat;
     background-size: 20px 20px;
     background-position: center center;
 }
@@ -112,11 +126,17 @@
 .product .product_info .price{
     color: #d8505c;
     margin-top: 5px;
+    text-align: left;
 }
 /* .product .product_info .option{
 
 } */
 /* 商品盒子==>商品购买数量选项 */
+.option{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 .option .number{
     display: flex;
 }
@@ -130,6 +150,15 @@
     border-bottom: 1px  dashed #ccc;
     border-left: 0;
     border-right: 0;
-    height: 24px;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 22px;
     width: 32px;
+}
+.option .delBox{
+    width:26px;
+    height: 26px;
+    background: url(../images/del.png) no-repeat;
+    background-size: 22px 22px;
+    background-position: center center;
 }
