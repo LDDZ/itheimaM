@@ -1,5 +1,5 @@
 /* 定义商品分类页顶部通栏 */
-/* 一级分类 */
+
 .topBar{
     width: 100%;
     height: 45px;
@@ -39,6 +39,7 @@
     border-radius: 4px;
     margin-top: 7px;
 }
+/* 一级分类 */
 .category_left{
     width: 90px;
     height: 100%;

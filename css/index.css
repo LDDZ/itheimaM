@@ -37,11 +37,108 @@ header div .login{
     text-align: center;
     color: #fff;
 }
+/* 轮播图 */
+.slider{
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#images{
+    /* position: relative;
+    background-color:red; */
+    width: 100%;
+   
+}
+
+#images>a{
+    transition:  opacity 1s linear;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.displayImg{
+    /* display: block; */
+    opacity: 1;
+}
+
+.hiddenImg{
+ /* display: none; */
+ opacity: 0;
+}
+#images img{
+    transition: opacity 1s linear;
+    opacity: 1;
+    width:  100%;
+    height: 180px;    
+    margin: 0 auto;
+}
+
+.btn{
+    position: absolute;
+    top:50%;
+    width: 60px;
+    height: 30px;
+    background-color: #000;
+    opacity: 0.3;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background-position: center;
+}
+
+.rightButton{
+    right:20px;
+}
+
+.leftButton{
+    left:20px;
+}
+
+.txt-box{
+    width: 100%;
+    /* background-color: #000; */
+    /* opacity: 0.3; */
+    height:5px;
+    position: absolute;    
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 5;
+    transition: height 0.2s linear 0s;
+}
+
+.txt-box:hover{
+    height: 40px;
+}
+
+.txtItem{
+    width: 25%;
+    margin-right: 2px;
+    color: #fff;
+    text-align: center;    
+}
+.txtItem:last-child{
+    margin:0;
+}
+
+.txtItem:hover,.heighlightColor{
+    background-color:rgb(252, 164, 2);
+}
+.normalColor{
+    background-color:rgba(0,0,0,0.5);
+}
+
 
 /* 导航栏 */
 nav{
     width: 100%;
-    border-bottom: 1px solid #C0C0C0;
+    border-bottom: 1px dashed #C0C0C0;
 }
 nav ul{
     width: 100%;
@@ -72,7 +169,6 @@ nav ul li a p{
 /* 商品 */
 .product{
     padding: 0 5px;
-    /* border: 1px solid #dd4b26; */
 }
 .product .product_box{
     width: 100%;
@@ -82,53 +178,49 @@ nav ul li a p{
 .product .product_box_header{
     height: 32px;
     line-height: 32px;
-    border-bottom: 1px solid #666;
     display: flex;
-    /* justify-content:space-between;  */
+    justify-content:space-between; 
 }
 /* 商品秒杀 */
-.product .sk_icon{
+.product_box_header_left{
+    display: flex;
+}
+.product_box_header_left .sk_icon{
     background: url(../images/Stopwatch.png) no-repeat;
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
     margin-top: 6px;
 }
-.product .sk_name{
+.product_box_header_left .sk_name{
     color: #d8505c;
     font-size: 15px;
     font-weight: bold;
 }
-.product .sk_time{
+.product_box_header_left .sk_time{
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
     line-height: 22px;
     display: flex;
 }
-.product .sk_time span{
+.product_box_header_left .sk_time span{
     margin-left: 2px;
     background: #000;
     color: #fff;
     width: 20px;
 }
-.product .sk_time .punctuation_mark{
+.product_box_header_left .sk_time .punctuation_mark{
     background: #fff;
     color: #000;
     width: 10px;
 }
-/* .product .product_box_header_moer{
-    
-    margin-left: 20px;
-    display: block;
-    float: right;
+.product_box_header_right{
     display: flex;
     justify-content: flex-end;
-    align-self:flex-end;
-} */
-.product .product_box_header_moer > a{
-    color: #000;
+    margin-right: 8px;
 }
+
 
 .product .product_box_content ul{
     width: 100%;
@@ -157,7 +249,7 @@ nav ul li a p{
     color: #666;
     text-decoration: line-through;
 }
-/* vip专享精品 */
+/* VIP优惠精品 */
 .product .product_box_header .vip{
     border-left: 6px solid #6666FF;
     margin-top: 6px;

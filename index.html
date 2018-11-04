@@ -19,11 +19,48 @@
             <a href="#" class="login">登录</a>
         </div>
     </header>
+    <!-- 轮播图 -->
+    <div class="slider">
+            <div id="images">
+                <a href="#" class="displayImg"><img src="images/slider01.jpg" alt=""></a>
+                <a href="#" class="hiddenImg"><img src="images/slider02.jpg" alt=""></a>
+                <a href="#" class="hiddenImg"><img src="images/slider03.jpg" alt=""></a>
+                <a href="#" class="hiddenImg"><img src="images/slider04.jpg" alt=""></a>
+                <a href="#" class="hiddenImg"><img src="images/slider05.jpg" alt=""></a>
+            </div>
+            <div>
+                <p class="leftButton btn">上一张</p>
+                <p class="rightButton btn"> 下一张</p>
+            </div>
+            <ul class="txt-box">
+                <li class="txtItem heighlightColor">
+                    <p>11</p>
+                    <p>12</p>
+                </li>
+                <li class="txtItem normalColor">
+                    <p>21</p>
+                    <p>22</p>
+                </li>
+                <li class="txtItem normalColor">
+                    <p>31</p>
+                    <p>32</p>
+                </li>
+                <li class="txtItem normalColor">
+                    <p>41</p>
+                    <p>42</p>
+                </li>
+                <li class="txtItem normalColor">
+                    <p>51</p>
+                    <p>52</p>
+                </li>
+            </ul>
+        </div>
+        
     <!-- 导航栏 -->
     <nav>
         <ul>
             <li>
-                <a href="#">
+                <a href="category.html">
                     <img src="images/category.png" alt="">
                     <p>分类查询</p>
                 </a>
@@ -35,7 +72,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="cart.html">
                     <img src="images/shopping_cart.png" alt="">
                     <p>购 物 车</p>
                 </a>
@@ -76,48 +113,52 @@
     <div class="product">
         <div class="product_box">
             <div class="product_box_header">
-                <span class="sk_icon"></span>
-                <span class="sk_name">掌上秒杀</span>
-                <div class="sk_time">
-                    <span>0</span>
-                    <span>0</span>
-                    <span class="punctuation_mark">:</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span class="punctuation_mark">:</span>
-                    <span>0</span>
-                    <span>0</span>
+                <div class="product_box_header_left">
+                    <span class="sk_icon"></span>
+                    <span class="sk_name">掌上秒杀</span>
+                    <div class="sk_time">
+                        <span>0</span>
+                        <span>0</span>
+                        <span class="punctuation_mark">:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span class="punctuation_mark">:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
                 </div>
-                <div class="product_box_header_moer"><a href="#">更多&gt;</a></div>
+                <div class="product_box_header_right">
+                    <div class="product_box_header_moer"><a href="#">更多&gt;</a></div>
+                </div>
             </div>
             <div class="product_box_content">
                  <ul>
                      <li>
                          <a href="#">
                              <img src="images/commodity_01.jpg" alt="">
-                             <p>&yen399</p>
-                             <p>&yen599</p>
+                             <p>&yen;399</p>
+                             <p>&yen;599</p>
                          </a>
                      </li>
                      <li>
                          <a href="#">
                              <img src="images/commodity_02.jpg" alt="">
-                             <p>&yen399</p>
-                             <p>&yen599</p>
+                             <p>&yen;399</p>
+                             <p>&yen;599</p>
                          </a>
                      </li>
                      <li>
                          <a href="#">
                              <img src="images/commodity_03.jpg" alt="">
-                             <p>&yen399</p>
-                             <p>&yen599</p>
+                             <p>&yen;399</p>
+                             <p>&yen;599</p>
                          </a>
                      </li>
                  </ul>
             </div>
         </div>
         <div class="product_box">
-            <div class="product_box_header"><span class="vip">vip专享精品</span></div>
+            <div class="product_box_header"><span class="vip">VIP优惠精品</span></div>
             <div class="vip_content">
                 <a class="img_left" href="#">
                     <img src="images/commodity_04.jpg" alt="">
@@ -131,5 +172,6 @@
             </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
